@@ -1,0 +1,15 @@
+header{
+    color:red;
+background-color: black;
+}
+footer{
+    color:greenyellow;
+    background-color: black;
+}
+li{
+    font-weight: bold;
+    font-style: italic;
+}
+nav ul li{
+    text-decoration:underline;
+}
