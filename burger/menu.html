@@ -16,10 +16,28 @@
             <header>
                 <div class="row">
                     <div class="col-md-4">
-                        logotipo
+                        <img src="images/logo.png" alt="Logo de la pagina" width="60" style="border-radius: 100%;">
                     </div>
                     <div class="col-md-6">
-                        menu_superior
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                            <div class="container-fluid">
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="quienes.html">¿Quienes Somos?</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="sucursales.html">Sucursales</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">Contacto</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                        </div>
+                          </nav>
                     </div>
                     <div class="col-md-2">
                         perfil
@@ -27,42 +45,37 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        imagen_encabezado
+                        <img src="images/hearder_hamburger.png" class="img-fluid" alt="Bienbenido a Burguer Lince">
                     </div>
                 </div>
             </header>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary" data-bs-theme="dark">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#">Navbar</a>
+                      <a class="navbar-brand" href="index.html">Inicio</a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="promociones.html">Promociones</a>
                           </li>
                           <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Dropdown
+                            <a class="nav-link dropdown-toggle" href="menu.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Menu
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="hamburgusesas.html">Hamburguesa</a></li>
+                              <li><a class="dropdown-item" href="ensaladas.html">Ensaladas</a></li>
+                              <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                              <li><a class="dropdown-item" href="combos.html">Combos</a></li>
                             </ul>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                           </li>
                         </ul>
                         <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
+                          <input class="form-control me-2" type="search" placeholder="Busca Aqui Tu Producto" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Buscar</button>
                         </form>
                       </div>
                     </div>
@@ -79,44 +92,88 @@
                     </div>
                 </section>
                 <section>
-                    <div class="row">
-                        <div class="col-md-2">
-        
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="images/hamburguesas_sencilla.png" class="card-img-top" alt="Hamburguesa Sencilla">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa Sencilla</h5>
+                                    <p class="card-text">Dos jugosas carnes a la parrilla, perfectamente sazonadas, suave por dentro y crujiente por fuera.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            hamburguesa_1
+                        <div class="col-md-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="images/hamburguesa_triple.png" class="card-img-top" alt="Hamburguesa Triple">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa Triple</h5>
+                                    <p class="card-text">Tres suculentas capas de carne perfectamente sazonadas, vegetales frescos y nuestras salsas exclusivas.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            hamburguesa_2
+                        <div class="col-md-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="images/hambuguesa_pollo.png" class="card-img-top" alt="Hamburguesa de Pollo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa de Pollo</h5>
+                                    <p class="card-text">Acompañada de lechuga fresca, rodajas de tomate, queso cheddar derretido y nuestro aderezo especial.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            hamburguesa_3
-                        </div>
-                        <div class="col-md-2">
-                            hamburguesa_4
-                        </div>
-                        <div class="col-md-2">
-        
+                        <div class="col-md-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="images/hamburgusa_dobletocino.png" class="card-img-top" alt="Hamburguesa Doble Tocino">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa Doble Tocino</h5>
+                                    <p class="card-text">Dos capas de carne jugosa con crujiente tocino ahumado, queso cheddar fundido y un toque de salsa BBQ.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-2">
-        
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="images/hamburguesas_sencilla.png" class="card-img-top" alt="Hamburguesa Sencilla">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa Sencilla</h5>
+                                    <p class="card-text">Dos jugosas carnes a la parrilla, perfectamente sazonadas, suave por dentro y crujiente por fuera.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            hamburguesa_5
+                        <div class="col-md-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="images/hamburguesa_triple.png" class="card-img-top" alt="Hamburguesa Triple">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa Triple</h5>
+                                    <p class="card-text">Tres suculentas capas de carne perfectamente sazonadas, vegetales frescos y nuestras salsas exclusivas.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            hamburguesa_6
+                        <div class="col-md-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="images/hambuguesa_pollo.png" class="card-img-top" alt="Hamburguesa de Pollo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa de Pollo</h5>
+                                    <p class="card-text">Acompañada de lechuga fresca, rodajas de tomate, queso cheddar derretido y nuestro aderezo especial.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            hamburguesa_7
-                        </div>
-                        <div class="col-md-2">
-                            hamburguesa_8
-                        </div>
-                        <div class="col-md-2">
-        
+                        <div class="col-md-3">
+                            <div class="card" style="width: 100%;">
+                                <img src="images/hamburgusa_dobletocino.png" class="card-img-top" alt="Hamburguesa Doble Tocino">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa Doble Tocino</h5>
+                                    <p class="card-text">Dos capas de carne jugosa con crujiente tocino ahumado, queso cheddar fundido y un toque de salsa BBQ.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
