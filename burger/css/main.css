@@ -208,3 +208,51 @@ footer .col-md-6 {
         text-align: center; /* Centra el texto en pantallas pequeñas */
     }
 }
+/* Estilos Rústicos para el Navbar */
+.custom-navbar {
+  background-color: #5a3e2b; /* Color marrón oscuro */
+  font-family: 'Georgia', serif; /* Fuente de estilo antiguo */
+}
+
+.custom-navbar .nav-link {
+  color: #f5f5dc; /* Color beige claro */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #e2c590; /* Color dorado claro en hover */
+}
+
+/* Estilo del Footer */
+footer {
+  background-color: #3b2e2a; /* Marrón más oscuro */
+  color: #f5f5dc; /* Beige claro */
+  font-family: 'Georgia', serif; /* Fuente rústica */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para los Botones */
+.btn {
+  background-color: #b8860b; /* Color dorado envejecido */
+  color: white;
+  font-family: 'Georgia', serif;
+}
+
+.btn:hover {
+  background-color: #cd853f; /* Color marrón dorado oscuro en hover */
+}
+
+/* Estilo para las Tarjetas */
+.card {
+  border: 2px solid #5a3e2b; /* Borde rústico */
+  background-color: #f5f5dc; /* Fondo beige */
+  font-family: 'Georgia', serif;
+}
+
+.card-title {
+  color: #5a3e2b; /* Color marrón oscuro */
+}
+
+.card-text {
+  color: #3b2e2a; /* Texto marrón oscuro */
+}
