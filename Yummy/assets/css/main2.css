@@ -1,0 +1,258 @@
+h1{
+    color:red;
+}
+.logo-img {
+    width: 60px; 
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 50%;
+  }
+  @media (min-width: 768px) {
+    .logo-img {
+      width: 80px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .logo-img {
+      width: 100px;
+    }
+  }
+.custom-navbar {
+    background-color: #73777a;
+    padding: 0.75rem 1rem; 
+    border-radius: 0.25rem; 
+  }
+  
+  .custom-navbar .nav-link {
+    font-size: 16px; 
+    font-weight: 500; 
+    color: #ffffff; 
+    padding: 0.5rem 1rem; 
+    transition: color 0.3s ease; 
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #2fa301; 
+  }
+  
+  
+  .custom-navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); 
+  }
+  
+  .custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  @media (max-width: 768px) {
+    .custom-navbar .navbar-nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+  
+  /* Logo styling */
+.logo-img {
+    width: 60px; /* Ajuste del tamaño del logo */
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  /* Navbar styling */
+  .custom-navbar {
+    background-color: transparent; /* Elimina el fondo para mejor integración */
+    padding: 0;
+  }
+  
+  .custom-navbar .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    padding: 0.5rem 1rem;
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #007bff; /* Color de hover */
+  }
+  
+  .custom-navbar .navbar-nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Alineación del perfil */
+  #perfil {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .custom-navbar .navbar-nav {
+      text-align: center;
+    }
+  }
+/* Botón flotante de usuario */
+.user-menu {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 999;
+  }
+  
+  .user-icon {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  .user-icon:hover {
+    transform: scale(1.1); /* Efecto al pasar el mouse */
+  }
+  
+  /* Menú desplegable oculto por defecto */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .user-menu:hover .dropdown-menu {
+    display: block;
+  }
+  .dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }    
+  .col {
+    width: 100%;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+/* Estilo general para los botones */
+.btn {
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor tipo mano */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Estilo específico para promocion_1 */
+.promocion_1 {
+    background-color: #28a745; /* Color de fondo verde */
+}
+
+/* Estilo específico para promocion_paquetes */
+.promocion_paquetes {
+    background-color: #dc3545; /* Color de fondo rojo */
+}
+
+/* Efecto hover para ambos botones */
+.btn:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón (ajustar si es necesario) */
+}
+/* Estilo general del footer */
+footer {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    padding: 20px 0; /* Espaciado arriba y abajo */
+    border-top: 1px solid #e9ecef; /* Línea superior sutil */
+}
+
+/* Estilo para el contenedor del footer */
+footer .container {
+    width: 90%;
+    margin: 0 auto; /* Centra el contenido */
+}
+
+/* Estilo para las columnas del footer */
+footer .col-md-6 {
+    padding: 0 15px; /* Espaciado interno */
+}
+
+/* Estilo para el contenido del menú inferior */
+.menu_inferior p {
+    margin: 0;
+    font-size: 16px;
+    color: #343a40; /* Color de texto oscuro */
+}
+
+/* Estilo para los datos de la empresa */
+.datos_empresa p {
+    margin: 0;
+    font-size: 16px;
+    color: #495057; /* Color de texto ligeramente más claro */
+}
+
+/* Responsividad: ajuste para pantallas más pequeñas */
+@media (max-width: 768px) {
+    footer .row {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+}
+/* Estilos Rústicos para el Navbar */
+.custom-navbar {
+  background-color: #5a3e2b; /* Color marrón oscuro */
+  font-family: 'Georgia', serif; /* Fuente de estilo antiguo */
+}
+
+.custom-navbar .nav-link {
+  color: #f5f5dc; /* Color beige claro */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #e2c590; /* Color dorado claro en hover */
+}
+
+/* Estilo del Footer */
+footer {
+  background-color: #3b2e2a; /* Marrón más oscuro */
+  color: #f5f5dc; /* Beige claro */
+  font-family: 'Georgia', serif; /* Fuente rústica */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para los Botones */
+.btn {
+  background-color: #b8860b; /* Color dorado envejecido */
+  color: white;
+  font-family: 'Georgia', serif;
+}
+
+.btn:hover {
+  background-color: #cd853f; /* Color marrón dorado oscuro en hover */
+}
+
+/* Estilo para las Tarjetas */
+.card {
+  border: 2px solid #5a3e2b; /* Borde rústico */
+  background-color: #f5f5dc; /* Fondo beige */
+  font-family: 'Georgia', serif;
+}
+
+.card-title {
+  color: #5a3e2b; /* Color marrón oscuro */
+}
+
+.card-text {
+  color: #3b2e2a; /* Texto marrón oscuro */
+}
