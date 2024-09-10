@@ -1,3 +1,14 @@
+<?php
+$hamburguesas=array(
+                      array("id"=>1,"nombre"=>"Clasica","Descripcion"=>"Hambugursa clasica con queso","precio"=>"60","url"=>"","imagen"=>"programacion_web\Yummy\images\hamburguesas_sencilla.png","alt"=>"Imagen de hamgurquesa sencilla"),  
+                      array("id"=>2,"nombre"=>"Triple","Descipcion"=>"Hamburguesa de res triple con 3 pisos de carne","precio"=>"70","url"=>"","imagen"=>"programacion_web\Yummy\images\hamburguesas_triple.png","alt"=>"Imagen de Hamburgesa Triple"),
+                      array("id"=>3,"nombre"=>"Pollo","Descipcion"=>"Hamburguesa de pollo triple con condimentos","precio"=>"75","url"=>"","imagen"=>"programacion_web\Yummy\images\hambuguesa_pollo.png","alt"=>"Imagen de Hamburgesa de ¨Pollo")
+
+);
+/*echo"<pre>";
+print_r($hamburguesas);
+die();*/
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -27,13 +38,13 @@
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="quienes.html">¿Quienes Somos?</a>
+                                <a class="nav-link active" aria-current="page" href="quienes.phpindex.php">¿Quienes Somos?</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="sucursales.html">Sucursales</a>
+                                <a class="nav-link" href="sucursales.phpindex.php">Sucursales</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="contacto.html">Contacto</a>
+                                <a class="nav-link" href="contacto.phpindex.php">Contacto</a>
                               </li>
                             </ul>
                           </div>
@@ -62,25 +73,25 @@
             </header>
                 <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary" data-bs-theme="dark">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="index.html">Inicio</a>
+                      <a class="navbar-brand" href="index.php">Inicio</a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link" href="promociones.html">Promociones</a>
+                            <a class="nav-link" href="promociones.phpindex.php">Promociones</a>
                           </li>
                           <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="menu.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="menu.phpindex.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Menu
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="hamburgusesas.html">Hamburguesa</a></li>
-                              <li><a class="dropdown-item" href="ensaladas.html">Ensaladas</a></li>
-                              <li><a class="dropdown-item" href="bebidas.html">Bebidas</a></li>
+                              <li><a class="dropdown-item" href="hamburgusesas.phpindex.php">Hamburguesa</a></li>
+                              <li><a class="dropdown-item" href="ensaladas.phpindex.php">Ensaladas</a></li>
+                              <li><a class="dropdown-item" href="bebidas.phpindex.php">Bebidas</a></li>
                               <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="combos.html">Combos</a></li>
+                              <li><a class="dropdown-item" href="combos.phpindex.php">Combos</a></li>
                             </ul>
                           </li>
                         </ul>
@@ -104,6 +115,7 @@
                 </section>
                 <section>
                     <div class="row text-center">
+                      <?php foreach($hamburguesas as $hamburguesa); ?>
                         <div class="col-md-3">
                             <div class="card" style="width: 100%;">
                                 <img src="images/hamburguesas_sencilla.png" class="card-img-top" alt="Hamburguesa Sencilla">
@@ -114,6 +126,7 @@
                                 </div>
                             </div>
                         </div>
+                      <?php ?>
                         <div class="col-md-3">
                             <div class="card" style="width: 100%;">
                                 <img src="images/hamburguesa_triple.png" class="card-img-top" alt="Hamburguesa Triple">
@@ -187,6 +200,7 @@
                             </div>
                         </div>
                     </div>
+
                 </section>
             </main>
             <footer>

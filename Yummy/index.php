@@ -41,7 +41,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+    <a href="index.php" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename">Burger Lince</h1>
@@ -51,7 +51,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Casa<br></a></li>
-          <li><a href="historia.html">Acerca de nosotros</a></li>
+          <li><a href="historia.php">Acerca de nosotros</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#events">Eventos</a></li>
           <li><a href="#chefs">Chefs</a></li>
@@ -78,7 +78,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="menu.html">Menu</a>
+      <a class="btn-getstarted" href="menu.php">Menu</a>
 
     </div>
   </header>
@@ -1157,10 +1157,11 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Yummy</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <?php
+        date_default_timezone_set('America/Mexico_City');
+        $hoy = date("F j, Y, g:i a"); 
+        echo($hoy)
+        ?>
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
