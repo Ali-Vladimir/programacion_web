@@ -8,40 +8,37 @@
 </head>
 <body>
 
-    <div class="header">
-        <h1>Burger Lince</h1>
-    </div>
-
+    <!-- Historia Section -->
+<section id="historia" class="light-background">
     <div class="container">
-        <h2>Nuestra Historia</h2>
-        <div class="story">
-            <p>En el año 2015, dos amigos apasionados por las hamburguesas gourmet decidieron que era el momento de crear algo único en la escena gastronómica. Fue así como nació Burger Lince, una hamburguesería que no solo se destaca por sus ingredientes de primera calidad, sino también por su ambiente acogedor y su compromiso con el sabor auténtico.</p>
-
-            <p>Inspirados en el lince ibérico, símbolo de agilidad y astucia, nuestros fundadores decidieron que su hamburguesería debía representar estos valores. Con esta idea en mente, Burger Lince se enfocó en crear hamburguesas innovadoras, combinando recetas tradicionales con un toque moderno y atrevido.</p>
-
-            <p>Desde sus humildes comienzos en un pequeño local en las afueras de la ciudad, Burger Lince ha crecido para convertirse en una cadena reconocida a nivel nacional, siempre manteniéndose fiel a sus raíces: hamburguesas irresistibles hechas con cariño y dedicación.</p>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Nuestra Historia</h2>
+          <p class="section-subheading text-muted">Desde nuestros humildes comienzos hasta convertirnos en un ícono local.</p>
         </div>
-
-        <h2>Línea del Tiempo</h2>
-        <div class="timeline">
-            <div>
-                <h3>2015</h3>
-                <p>Fundación en un pequeño local.</p>
-            </div>
-            <div>
-                <h3>2018</h3>
-                <p>Apertura de la segunda sucursal en el centro de la ciudad.</p>
-            </div>
-            <div>
-                <h3>2022</h3>
-                <p>Expansión nacional con más de 20 sucursales.</p>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="image-container">
+            <img src="assets/img/gallery/gallery-5.jpg" width="400px" alt="Historia de la Hamburguesería" class="img-fluid">
+          </div>
         </div>
+        <div class="col-lg-6">
+          <div class="content-container">
+            <p>
+              Fundada en el año 2000, <strong>Burger Lince</strong> comenzó como un pequeño puesto de hamburguesas en una esquina de la ciudad. Con dedicación, pasión y el compromiso de servir las mejores hamburguesas, poco a poco fuimos ganando la confianza y el cariño de nuestros clientes.
+            </p>
+            <p>
+              Lo que comenzó como una pequeña empresa familiar, pronto se convirtió en un referente local, conocido por nuestras hamburguesas de calidad, nuestro servicio amigable y nuestros ingredientes frescos. Hoy en día, <strong>Burger Lince</strong> cuenta con múltiples locales, pero seguimos comprometidos con los mismos valores que nos hicieron exitosos desde el principio.
+            </p>
+            <p>
+              Nuestro objetivo siempre ha sido ofrecer no solo una comida, sino una experiencia. Acompáñanos en este viaje de sabor y tradición que continúa hasta el día de hoy.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="footer">
-        <p>© 2024 Burger Lince. Todos los derechos reservados.</p>
-    </div>
+  </section>  
 
 </body>
 </html>

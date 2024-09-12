@@ -78,7 +78,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="menu.php">Menu</a>
+      <a class="btn-getstarted" href="menu.html">Menu old</a>
 
     </div>
   </header>
@@ -119,7 +119,7 @@
 
         <div class="row gy-4">
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid mb-4" alt="">
+            <img src="images/imagenes_menu/4_haburguesas.png" class="img-fluid mb-4" alt="">
             <div class="book-a-table">
               <h3>Telefono</h3>
               <p>+52 412 132 56 87</p>
@@ -127,19 +127,15 @@
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
             <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
+              <p>Fundado en el corazón de la ciudad, Burger Lince combina un ambiente acogedor con el sabor incomparable de las hamburguesas artesanales. Desde nuestros inicios, hemos sido apasionados por ofrecer ingredientes frescos y de alta calidad, cocinados a la perfección para deleitar a nuestros clientes.</p>
+              <p>En Burger Lince, cada hamburguesa cuenta una historia. Nuestro equipo de chefs expertos trabaja incansablemente para crear combinaciones únicas que te harán querer volver por más. Somos una familia que valora el servicio, la calidad y la satisfacción de nuestros comensales.</p>
+
+
+               <h4>Horario de Atención</h4>
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i>  <p><strong>Lunes a Viernes:</strong> 12:00 PM - 10:00 PM</p></li>
+                <li><i class="bi bi-check-circle-fill"></i> <p><strong>Sábado y Domingo:</strong> 11:00 AM - 11:00 PM</p></li>
               </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
 
               <div class="position-relative mt-4">
                 <img src="assets/img/about-2.jpg" class="img-fluid" alt="">

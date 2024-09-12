@@ -5,9 +5,12 @@ $hamburguesas=array(
                       array("id"=>3,"nombre"=>"Pollo","Descipcion"=>"Hamburguesa de pollo triple con condimentos","precio"=>"75","url"=>"","imagen"=>"programacion_web\Yummy\images\hambuguesa_pollo.png","alt"=>"Imagen de Hamburgesa de ¨Pollo")
 
 );
-/*echo"<pre>";
+echo"<pre>";
 print_r($hamburguesas);
-die();*/
+foreach($hamburguesas as $hamburguesa){
+  print_r($hamburguesa);
+}
+die();
 ?>
 <!doctype html>
 <html lang="en">
@@ -18,7 +21,7 @@ die();*/
     rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main2.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Burger lince</title>
   </head>
   <body>
@@ -27,7 +30,7 @@ die();*/
             <header>
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-2">
-                      <img src="images/logo.png" alt="Logo de la pagina" class="logo-img">
+                      <img src="images/logo.png" width=80px alt="Logo de la pagina" class="logo-img">
                     </div>
                     <div class="col-md-7">
                       <nav class="navbar navbar-expand-lg custom-navbar">
@@ -38,7 +41,7 @@ die();*/
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="quienes.phpindex.php">¿Quienes Somos?</a>
+                                <a class="nav-link active" aria-current="page" href="quienes.html">¿Quienes Somos?</a>
                               </li>
                               <li class="nav-item">
                                 <a class="nav-link" href="sucursales.phpindex.php">Sucursales</a>
@@ -53,7 +56,7 @@ die();*/
                     </div>
                     <div class="col-md-3 text-end">
                       <span id="perfil"><div class="user-menu">
-                        <img src="images/floats/014-usuario.png" alt="Usuario" class="user-icon">
+                        <img src="images/floats/014-usuario.png" width=80px alt="Usuario" class="user-icon">
                         <div class="dropdown-menu">
                           <a href="#" class="dropdown-item">Perfil</a>
                           <a href="#" class="dropdown-item">Ajustes</a>
