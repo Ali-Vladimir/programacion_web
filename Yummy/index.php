@@ -78,7 +78,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="menu.html">Menu old</a>
+      <a class="btn-getstarted" href="menu.php">Menu old</a>
 
     </div>
   </header>

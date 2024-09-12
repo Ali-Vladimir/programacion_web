@@ -1,16 +1,15 @@
 <?php
-$hamburguesas=array(
-                      array("id"=>1,"nombre"=>"Clasica","Descripcion"=>"Hambugursa clasica con queso","precio"=>"60","url"=>"","imagen"=>"programacion_web\Yummy\images\hamburguesas_sencilla.png","alt"=>"Imagen de hamgurquesa sencilla"),  
-                      array("id"=>2,"nombre"=>"Triple","Descipcion"=>"Hamburguesa de res triple con 3 pisos de carne","precio"=>"70","url"=>"","imagen"=>"programacion_web\Yummy\images\hamburguesas_triple.png","alt"=>"Imagen de Hamburgesa Triple"),
-                      array("id"=>3,"nombre"=>"Pollo","Descipcion"=>"Hamburguesa de pollo triple con condimentos","precio"=>"75","url"=>"","imagen"=>"programacion_web\Yummy\images\hambuguesa_pollo.png","alt"=>"Imagen de Hamburgesa de ¨Pollo")
-
-);
-echo"<pre>";
+$hamburguesas=array();
+$mbd = new PDO('mysql:host=localhost;dbname=burger', 'burger', '123');
+$gsent = $mbd->prepare("SELECT nombre,precio FROM hamburguesa");
+$gsent->execute();
+$hamburguesas = $gsent->fetchAll(PDO::FETCH_ASSOC);
+/*echo"<pre>";
 print_r($hamburguesas);
 foreach($hamburguesas as $hamburguesa){
-  print_r($hamburguesa);
+  echo($hamburguesa);
 }
-die();
+die();*/
 ?>
 <!doctype html>
 <html lang="en">
@@ -118,92 +117,19 @@ die();
                 </section>
                 <section>
                     <div class="row text-center">
-                      <?php foreach($hamburguesas as $hamburguesa); ?>
-                        <div class="col-md-3">
-                            <div class="card" style="width: 100%;">
-                                <img src="images/hamburguesas_sencilla.png" class="card-img-top" alt="Hamburguesa Sencilla">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa Sencilla</h5>
-                                    <p class="card-text">Dos jugosas carnes a la parrilla, perfectamente sazonadas, suave por dentro y crujiente por fuera.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                      <?php ?>
-                        <div class="col-md-3">
-                            <div class="card" style="width: 100%;">
-                                <img src="images/hamburguesa_triple.png" class="card-img-top" alt="Hamburguesa Triple">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa Triple</h5>
-                                    <p class="card-text">Tres suculentas capas de carne perfectamente sazonadas, vegetales frescos y nuestras salsas exclusivas.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card" style="width: 100%;">
-                                <img src="images/hambuguesa_pollo.png" class="card-img-top" alt="Hamburguesa de Pollo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa de Pollo</h5>
-                                    <p class="card-text">Acompañada de lechuga fresca, rodajas de tomate, queso cheddar derretido y nuestro aderezo especial.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card" style="width: 100%;">
-                                <img src="images/hamburgusa_dobletocino.png" class="card-img-top" alt="Hamburguesa Doble Tocino">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa Doble Tocino</h5>
-                                    <p class="card-text">Dos capas de carne jugosa con crujiente tocino ahumado, queso cheddar fundido y un toque de salsa BBQ.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-md-3">
-                            <div class="card" style="width: 100%;">
-                                <img src="images/hamburguesas_sencilla.png" class="card-img-top" alt="Hamburguesa Sencilla">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa Sencilla</h5>
-                                    <p class="card-text">Dos jugosas carnes a la parrilla, perfectamente sazonadas, suave por dentro y crujiente por fuera.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card" style="width: 100%;">
-                                <img src="images/hamburguesa_triple.png" class="card-img-top" alt="Hamburguesa Triple">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa Triple</h5>
-                                    <p class="card-text">Tres suculentas capas de carne perfectamente sazonadas, vegetales frescos y nuestras salsas exclusivas.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card" style="width: 100%;">
-                                <img src="images/hambuguesa_pollo.png" class="card-img-top" alt="Hamburguesa de Pollo">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa de Pollo</h5>
-                                    <p class="card-text">Acompañada de lechuga fresca, rodajas de tomate, queso cheddar derretido y nuestro aderezo especial.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card" style="width: 100%;">
-                                <img src="images/hamburgusa_dobletocino.png" class="card-img-top" alt="Hamburguesa Doble Tocino">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hamburguesa Doble Tocino</h5>
-                                    <p class="card-text">Dos capas de carne jugosa con crujiente tocino ahumado, queso cheddar fundido y un toque de salsa BBQ.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    <?php foreach($hamburguesas as $hamburguesa): ?>
+    <div class="col-md-3">
+        <div class="card" style="width: 100%;">
+          <a href="#" class="img" style="background-image: url(<?php echo($hamburguesa['imagen']); ?>);"></a>
+            <img src="<?php echo isset($hamburguesa['imagen']) ? $hamburguesa['imagen'] : 'default-image.jpg'; ?>" class="card-img-top" alt="Hamburguesa Sencilla">
+            <div class="card-body">
+                <h5 class="card-title">Hamburguesa Sencilla <?php echo isset($hamburguesa['nombre']) ? $hamburguesa['nombre'] : 'Nombre no disponible'; ?></h5>
+                <p class="card-text"><?php echo isset($hamburguesa['Descripcion']) ? $hamburguesa['Descripcion'] : 'Descripción no disponible'; ?></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+<?php endforeach; ?>
                 </section>
             </main>
             <footer>
